@@ -4,7 +4,6 @@ easyblock = 'CMakeMake'
 
 name = 'fenics-dolfinx'
 version = '0.9.0'
-versionsuffix='-python'
 
 homepage = 'https://github.com/FEniCS/dolfinx'
 
@@ -18,22 +17,25 @@ checksums = ['b266c74360c2590c5745d74768c04568c965b44739becca4cd6b5aa58cdbbbd1']
 
 configopts = (
     ' -DDOLFINX_UFCX_PYTHON=OFF '
+    ' -DDOLFINX_BASIX_PYTHON=OFF '
 )
 
 
 builddependencies = [
     ('CMake', '3.27.6'),
-    ('HDF5', '1.14.3'),
+    ('pkgconfig', '1.5.5', '-python'),
 ]
 
 dependencies = [
     ('PETSc', '3.22.5'),
     ('fenics-basix', '0.9.0'),
-    ('pkgconfig', '1.5.5', versionsuffix),
+    ('HDF5', '1.14.3'),
     ('ParMETIS','4.0.3'),
+    ('Boost','1.83.0'),
     ('spdlog', '1.12.0'),
     ('pugixml', '1.14'),
     ('fenics-ufcx', '0.9.0'),
+    
 
 ]
 
@@ -42,7 +44,7 @@ srcdir = "cpp"
 options = {'modulename': 'dolfinx'}
 
 sanity_check_paths = {
-    'files': ['bin/dolfinx', 'lib/libdolfinx.so'],
+    'files': ['lib/libdolfinx.so'],
     'dirs': ['include/dolfinx'],
 }
 
