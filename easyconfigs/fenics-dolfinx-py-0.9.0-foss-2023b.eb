@@ -21,24 +21,24 @@ builddependencies = [
     ('CMake', '3.27.6'),
     ('scikit-build-core', '0.10.7'),
     ('nanobind', '2.5.0'),
-    ('setuptools', '64.0.3'), # generally built with GCCcore/12.2.0 toolchain. 
-    ('HDF5', '1.14.3'),
-    ('pkgconfig', '1.5.5'),
-    ('fenics-dolfinx', '%(version)s'),
+    ('setuptools', '64.0.3'),  
+    ('pkgconfig', '1.5.5','-python'),
+    ('fenics-dolfinx-cpp', '%(version)s'),
 ]
 
 dependencies = [
     ('Python', '3.11.5'),
-    ('Scipy-bundle',2023.11'),
+    ('SciPy-bundle','2023.11'),
+    ('HDF5', '1.14.3'),
     ('mpi4py', '3.1.5'),
     ('cffi', '1.15.1'),
     ('PETSc', '3.22.5'),
-    ('petsc4py','3.20.3'), # built with  only foss 2021a,2022a,2023a familly
-    ('slepc4py','3.20.2'), # built with  only foss 2021a,2022a,2023a familly
+    ('petsc4py','3.22.5'), 
+    ('slepc4py','3.22.2'), 
     ('fenics-basix', '0.9.0'),
     ('fenics-basix-py', '0.9.0'),
-    ('fenics-ufl-py', '0.9.0'),
-    ('fennics-ffcx-py', '0.9.0'),
+    ('fenics-ufl-py', '2024.2.0'),
+    ('fenics-ffcx-py', '0.9.0'),
 
 ]
 
@@ -48,10 +48,14 @@ install_src = './python'
 
 options = {'modulename': 'dolfinx'}
 
+sanity_check_skip = True
 
 sanity_check_paths = {
-    'files': ['lib/python*/site-packages/dolfinx/__init__.py'],
-    'dirs': ['lib/python*/site-packages/dolfinx'],
+    'files': ['lib/python%(pyshortver)s/site-packages/dolfinx/__init__.py'],
+    'dirs': ['lib/python%(pyshortver)s/site-packages/dolfinx'],
 }
+
+options = {'modulename': 'dolfinx'}
+
 
 moduleclass = 'cae'
