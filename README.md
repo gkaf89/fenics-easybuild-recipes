@@ -1,4 +1,6 @@
-# fenics-easybuild-recipes
+# Easyconfigs for FEniCS
+
+![Fenics dependencies](resources/fenics-dolfinx-py-0.9.0-foss-2023b.svg)
 
 ## Ecternal libraries
 

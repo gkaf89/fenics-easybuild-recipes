@@ -46,7 +46,7 @@ install_src = './python'
 
 
 
-options = {'modulename': 'dolfinx'}
+#options = {'modulename': 'dolfinx'}
 
 sanity_check_skip = True
 
