@@ -1,5 +1,8 @@
 # Easyconfigs for FEniCS
 
+The installation instructions for FEniCS are found form the [download page](https://fenicsproject.org/download/). The page points to the [installation instructions](https://github.com/FEniCS/dolfinx#installation) at the repository of FEniCS. The installation instructions point to the [list of dependencies](https://docs.fenicsproject.org/dolfinx/main/python/installation).
+
+
 ![Fenics dependencies](resources/fenics-dolfinx-py-0.9.0-foss-2023b.svg)
 
 ## Ecternal libraries
