@@ -39,8 +39,6 @@ dependencies = [
 
 srcdir = "cpp"
 
-options = {'modulename': 'dolfinx'}
-
 sanity_check_paths = {
     'files': ['lib/libdolfinx.so'],
     'dirs': ['include/dolfinx'],
