@@ -20,7 +20,6 @@ configopts = (
     ' -DDOLFINX_BASIX_PYTHON=OFF '
 )
 
-
 builddependencies = [
     ('make', '4.4.1'),
     ('CMake', '3.27.6'),
