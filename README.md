@@ -5,7 +5,17 @@ The installation instructions for FEniCS are found form the [download page](http
 
 ![Fenics dependencies](resources/fenics-dolfinx-py-0.9.0-foss-2023b.svg)
 
-## Ecternal libraries
+## Relevant easyconfigs
+
+- [petsc4py](https://github.com/easybuilders/easybuild-easyconfigs/pull/23581)
+- [fenics-basix](https://github.com/easybuilders/easybuild-easyconfigs/pull/23497)
+- [fenics-dolfinx](https://github.com/easybuilders/easybuild-easyconfigs/pull/23796)
+- [fenics-ffcx](https://github.com/easybuilders/easybuild-easyconfigs/pull/23793)
+- [fenics-ufcx](https://github.com/easybuilders/easybuild-easyconfigs/pull/23792)
+- [fenics-ufl](https://github.com/easybuilders/easybuild-easyconfigs/pull/23791)
+- [fenics-dolfinx-python](https://github.com/easybuilders/easybuild-easyconfigs/pull/23777)
+
+## External libraries
 
 ### `petsc4py`
 
