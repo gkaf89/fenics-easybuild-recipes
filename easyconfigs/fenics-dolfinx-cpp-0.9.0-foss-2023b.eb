@@ -20,10 +20,10 @@ configopts = (
     ' -DDOLFINX_BASIX_PYTHON=OFF '
 )
 
-
 builddependencies = [
+    ('make', '4.4.1'),
     ('CMake', '3.27.6'),
-    ('pkg-config', '0.29.2'),
+    ('pkgconf', '2.0.3'),
 ]
 
 dependencies = [
@@ -38,8 +38,6 @@ dependencies = [
 ]
 
 srcdir = "cpp"
-
-options = {'modulename': 'dolfinx'}
 
 sanity_check_paths = {
     'files': ['lib/libdolfinx.so'],

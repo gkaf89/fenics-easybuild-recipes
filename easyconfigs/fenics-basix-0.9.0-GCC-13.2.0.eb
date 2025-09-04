@@ -13,6 +13,7 @@ sources = ['v%(version)s.tar.gz']
 checksums = ['60e96b2393084729b261cb10370f0e44d12735ab3dbd1f15890dec23b9e85329']
 
 builddependencies = [
+    ('make', '4.4.1'),
     ('CMake', '3.27.6'),
 ]
 
@@ -24,7 +25,7 @@ srcdir = "cpp"
 
 sanity_check_paths = {
     'files': ['lib/libbasix.so'],
-    'dirs': ['include', 'lib'],
+    'dirs': ['include'],
 }
 
 moduleclass = 'cae'
