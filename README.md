@@ -15,6 +15,10 @@ The installation instructions for FEniCS are found form the [download page](http
 - [fenics-ufl](https://github.com/easybuilders/easybuild-easyconfigs/pull/23791)
 - [fenics-dolfinx-python](https://github.com/easybuilders/easybuild-easyconfigs/pull/23777)
 
+## Sanity checks
+
+https://newfrac.gitlab.io/newfrac-fenicsx-training/05-dolfinx-parallel/dolfinx-parallel.html#mpi-and-dolfinx
+
 ## External libraries
 
 ### `petsc4py`
@@ -38,3 +42,11 @@ Executables linking with PETSc will fail if the environment is not setup correct
 It seems that `petsc4py` will only load PETSc linked executables only when required, so the sanity check is designed to force this load.
 
 There are [guidelines](https://www.mpi-forum.org/docs/mpi-2.0/mpi-20-html/node112.htm) on how MPI applications should handle launching outside `mpirun` or equivalent, but implementations are not obligated to follow them. I suspect this is a design choice by the PETSc developers.
+
+### spdlog
+
+There is already an spdlog package in the easyconfig repo. Do we really need to build with `SPDLOG_BUILD_SHARED` and `SPDLOG_BUILD_PIC`?
+
+### setuptools
+
+There is already `setuptools-80.9.0-GCCcore-12.3.0.eb`, we should this version for GCCcore-13.2.0.
