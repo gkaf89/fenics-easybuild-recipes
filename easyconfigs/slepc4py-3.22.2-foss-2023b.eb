@@ -17,6 +17,6 @@ dependencies = [
     ('petsc4py', '3.22.5'),
 ]
 
-sanity_check_commands = ["python -c 'import slepc4py'"]
+sanity_check_commands = ["mpirun -N 1 python -c 'from slepc4py import SLEPc'"]
 
 moduleclass = 'tools'
