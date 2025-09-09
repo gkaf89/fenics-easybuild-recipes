@@ -28,3 +28,11 @@ Executables linking with PETSc will fail if the environment is not setup correct
 It seems that `petsc4py` will only load PETSc linked executables only when required, so the sanity check is designed to force this load.
 
 There are [guidelines](https://www.mpi-forum.org/docs/mpi-2.0/mpi-20-html/node112.htm) on how MPI applications should handle launching outside `mpirun` or equivalent, but implementations are not obligated to follow them. I suspect this is a design choice by the PETSc developers.
+
+## PRs
+
+- petsc4py: 23581
+- slepc4py: 23805
+- Setuptools: 23816
+- pugixml: 23810
+- spdlog-pic: 23808
