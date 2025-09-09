@@ -25,7 +25,7 @@ options = {'modulename': 'ffcx'}
 
 sanity_check_paths = {
     'files': ['lib/python%(pyshortver)s/site-packages/ffcx/__init__.py'],
-    'dirs': ['lib/python%(pyshortver)s/site-packages/ffcx'],
+    'dirs': [],
 }
 
 moduleclass = 'cae'

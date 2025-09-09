@@ -19,7 +19,7 @@ dependencies = [
 
 sanity_check_paths = {
     'files': ['lib/python%(pyshortver)s//site-packages/ufl/__init__.py'],
-    'dirs': ['lib/python%(pyshortver)s/site-packages/ufl'],
+    'dirs': [],
 }
 
 options = {'modulename': 'ufl'}
