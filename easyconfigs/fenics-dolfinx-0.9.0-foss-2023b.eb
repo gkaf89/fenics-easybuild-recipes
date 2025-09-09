@@ -18,9 +18,9 @@ configopts = (
 )
 
 builddependencies = [
+    ('make', '4.4.1'),
     ('CMake', '3.27.6'),
     ('HDF5', '1.14.3'),
-    ('make', '4.4.1'),
     ('pkgconf', '2.0.3'),
 ]
 
