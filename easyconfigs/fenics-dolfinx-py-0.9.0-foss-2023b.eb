@@ -1,4 +1,4 @@
-easyblock = 'PythonPackage'  
+easyblock = 'PythonPackage'
 
 name = 'fenics-dolfinx-py'
 version = '0.9.0'
@@ -18,9 +18,9 @@ builddependencies = [
     ('fenics-dolfinx', '%(version)s'),
     ('make', '4.4.1'),
     ('nanobind', '2.5.0'),
-    ('pkgconfig', '1.5.5','-python'),
+    ('pkgconfig', '1.5.5', '-python'),
     ('scikit-build-core', '0.10.7'),
-    ('setuptools', '64.0.3'),  
+    ('setuptools', '80.9.0'),
 ]
 
 dependencies = [
@@ -33,8 +33,8 @@ dependencies = [
     ('fenics-ffcx', '0.9.0'),
     ('fenics-ufl', '2024.2.0'),
     ('mpi4py', '3.1.5'),
-    ('petsc4py','3.22.5'), 
-    ('slepc4py','3.22.2'), 
+    ('petsc4py', '3.22.5'),
+    ('slepc4py', '3.22.2'),
 ]
 
 install_src = './python'
@@ -46,9 +46,8 @@ sanity_check_paths = {
     'dirs': ['lib/python%(pyshortver)s/site-packages/dolfinx'],
 }
 
-
 sanity_check_commands = [
-    'mpirun -N 1 python -c "from mpi4py import MPI; import dolfinx"'
+    'mpirun -N 1 python -c "from mpi4py import MPI; import dolfinx"',
 ]
 
 moduleclass = 'cae'
