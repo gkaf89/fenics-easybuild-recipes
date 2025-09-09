@@ -28,6 +28,9 @@ dependencies = [
 ]
 
 install_src = './python'
+
+# Provide custom name for the module extension built-in sanity check: the EB module name is different from the Python
+# module name.
 options = {'modulename': 'basix'}
 
 moduleclass = 'cae'
