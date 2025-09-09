@@ -38,7 +38,15 @@ dependencies = [
 
 install_src = './python'
 
-options = {'modulename': 'dolfinx'}
+# Disable built-in check for module extension:
+#
+# python -c "import dolfinx"
+#
+# The module extension provide the dolphin Python package that is tested by the sanity check.
+#
+# See v5.1.1: easybuild-framework/easybuild/framework/extension.py:313
+#
+options = {'modulename': False}
 
 sanity_check_paths = {
     'files': ['lib/python%(pyshortver)s/site-packages/dolfinx/__init__.py'],
