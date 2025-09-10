@@ -1,6 +1,6 @@
-easyblock = 'PythonPackage'  
+easyblock = 'PythonPackage'
 
-name = 'fenics-ufl' 
+name = 'fenics-ufl'
 version = '2024.2.0'
 
 homepage = "https://github.com/FEniCS/ufl"
