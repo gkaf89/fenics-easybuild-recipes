@@ -33,4 +33,9 @@ install_src = './python'
 # module name.
 options = {'modulename': 'basix'}
 
+sanity_check_paths = {
+    'files': ['lib/python%(pyshortver)s/site-packages/basix/__init__.py'],
+    'dirs': [],
+}
+
 moduleclass = 'cae'
