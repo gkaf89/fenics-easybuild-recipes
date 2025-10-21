@@ -36,3 +36,16 @@ There are [guidelines](https://www.mpi-forum.org/docs/mpi-2.0/mpi-20-html/node11
 - Setuptools: 23816
 - pugixml: 23810
 - spdlog-pic: 23808
+
+## Dependencies
+
+```mermaid
+graph TD;
+DOLFINx_Python("fenics-dolfinx-python-0.9.0")-->DOLFINx("fenics-dolfinx-0.9.0");
+DOLFINx_Python-->Basix_Python("fenics-basix-python-0.9.0");
+DOLFINx_Python-->FFCx("fenics-ffcx-0.9.0");
+DOLFINx_Python-->UFL("fenics-ufl-0.9.0");
+Basix_Python-->Basix("fenics-basix-0.9.0");
+DOLFINx-->Ufcx("fenics-ufcs-0.9.0");
+DOLFINx-->Basix;
+```
