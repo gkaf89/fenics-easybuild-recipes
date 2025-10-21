@@ -18,7 +18,7 @@ $ ldd $EBROOTPETSC/lib/libpetsc.so
     libmpi_usempif08.so.40 => /opt/apps/easybuild/systems/aion/rhel810-20250803/2023b/epyc/software/OpenMPI/4.1.6-GCC-13.2.0/lib/../lib64/libmpi_usempif08.so.40 (0x00007fadd932d000)
     libmpi_usempi_ignore_tkr.so.40 => /opt/apps/easybuild/systems/aion/rhel810-20250803/2023b/epyc/softwar
 ...
-```    
+``` 
 
 Executables linking with PETSc will fail if the environment is not setup correctly, i.e. when they are launched without mpirun or srun.
 
